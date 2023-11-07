@@ -1,26 +1,20 @@
 from redisvl.index import SearchIndex
 from redisvl.query import VectorQuery
 from sentence_transformers import SentenceTransformer
+from keys_and_such import *
 
 import os,sys
 
 # set redis address
-"""
-username = "default"
-host = "<enter your redis host here>"
-port = "<enter your redis port here>"
-password = "<enter your redis password here>"
-"""
 # if you export your redis URL to the system you can execute:
 # rvl stats -i idx_cairn
 # and 
 # rvl index info -i idx_cairn
-# export REDIS_URL="redis://default:wFUzhoROOECMPsX7Cy3bk+xhfu0AzAMwSjbcSRQT6SA=@E5VSS.centralus.redisenterprise.cache.azure.net:10000"
 
-username = "default"
-host = "E5VSS.centralus.redisenterprise.cache.azure.net"
-port = "10000"
-password = "wFUzhoROOECMPsX7Cy3bk+xhfu0AzAMwSjbcSRQT6SA="
+username = redis_username
+host = redis_host
+port = redis_port
+password = redis_password
 
 REDIS_URL = f"redis://{username}:{password}@{host}:{port}"
 

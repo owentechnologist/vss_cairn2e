@@ -1,13 +1,6 @@
 import redis
 
 class TimeSeriesEventLogger:
-    """
-    custom_label = ""
-    shared_label = "VSS_and_LLM"
-    time_series_key_name = ""
-    redis = ""
-    ts = ""
-    """
 
     def __init__(self, custom_label, time_series_key_name, redis):
       self.custom_label = custom_label

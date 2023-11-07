@@ -1,7 +1,8 @@
 # vss_cairn2e
 Using Redis as a Vector Similarity Search database to provide an FAQ solution for cairn2e 
 
-useful link to python docs for redis:
+useful links to python docs for redis and search:
+https://redis-py.readthedocs.io/en/stable/index.html
 https://redis.readthedocs.io/en/stable/redismodules.html 
 
 useful links for redisvl:
@@ -56,6 +57,8 @@ pip3 install -r requirements.txt
 deactivate
 ```
 
+* Note that the file: keys_and_such.py contains connectivity information for Redis - the other scripts import these values - so you only have to edit in one place.
+
 ### to run the cairn data loader program the first time execute:
 
 ``` 
@@ -71,4 +74,14 @@ python3 redisvl_cairn_vss_query.py
 ### to use the results of a VSS query as context for an LLM generated response look at:
 ```
 python3 llm_redisvl_cairn_faq.py
+```
+
+### to observe the behavior of using Redis to store memories, TOPK (popular stuff), and event measures like duration and or number of tokens used look at:
+``` 
+python3 test_redis_loggers.py
+```
+
+### to work on a beginner chatbot with memory stored in Redis see:
+```
+python3 chat_with_memory.py
 ```

@@ -14,6 +14,10 @@ class TopkEntryLogger:
         except Exception as exc:
                 print('The topK key may already exist ... continuing on...')            
 
-    def addaddEntryToMyTopKKey(self,entry_value):
+    def addEntryToMyTopKKey(self,entry_value):
         print(f'adding event_value to TopKKey: {entry_value}')
         self.topk.add(self.topk_key_name, entry_value)
+    
+    def listTopK(self):
+        topResults = self.topk.list(self.topk_key_name)
+        return topResults 
