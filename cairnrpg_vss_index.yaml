@@ -1,0 +1,15 @@
+index:
+  name: idx_cairn
+  storage_type: hash
+  prefix: cairn:chunks
+  language: english
+fields:
+  text: 
+  - name: content
+  vector:
+  - name: embedding
+    dims: 768
+    datatype: float32
+    algorithm: flat
+    distance_metric: cosine
+    initial_cap: 1000

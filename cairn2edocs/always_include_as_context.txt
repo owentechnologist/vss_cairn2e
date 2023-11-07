@@ -1,0 +1,20 @@
+https://cairnrpg.com/ is the source location for all information related to CairnRPG
+
+CairnRPG is a rules system for a story-driven role-playing-game.  The primary goal of the game is to have fun as a group.
+
+The person who runs the campaign for the game is called the Warden.
+
+CairnRPG Core Rules:
+
+Character Attributes:
+Each of the three attributes are used in different circumstances (see saves, below).
+
+Strength (STR): Used for saves requiring physical power, like lifting gates, bending bars, resisting poison, etc.
+Dexterity (DEX): Used for saves requiring poise, speed, and reflexes like dodging, climbing, sneaking, balancing, etc.
+Willpower (WIL): Used for saves to persuade, deceive, interrogate, intimidate, charm, provoke, manipulate spells, etc.
+
+Saves
+A save is a roll to avoid bad outcomes from risky choices and circumstances.
+PCs roll a d20 and compare the results to an appropriate attribute. If they roll equal to or under that attribute, they pass. Otherwise, they fail.
+A 1 is always a success, and a 20 is always a failure.
+

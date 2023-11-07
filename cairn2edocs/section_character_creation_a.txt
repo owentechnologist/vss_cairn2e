@@ -1,0 +1,28 @@
+Character Creation for the role-playing game called: Cairn
+
+Roll or choose a Background
+
+First, roll on the Backgrounds table below. Note the roll result, as you will need to refer to it for the next few steps.
+Choose a name from the available list, then roll on each of the included tables in the background. Record your character’s items, skills, or abilities from each result.
+Unless otherwise noted, every PC starts with a Torch (3 uses), Rations (3 uses), and 3d6 gold pieces. See the core rules for how to record items.
+Some backgrounds may ask you to refer to tables on the Marketplace as well.
+
+Attributes, HP & Traits
+Roll for your character’s Attributes and Hit Protection.
+Roll for the rest of your character’s Traits, and then on the the Bonds table.
+Finally, roll for your character’s Age (2d20+10). If you are the youngest character, roll on the Omens table. The result should be read aloud to the other players.
+
+Backgrounds
+
+d20	Background	 	 
+1	Aurifex	11	Half-Witch
+2	Barber-Surgeon	12	Hexenbane
+3	Beast Handler	13	Jongleur
+4	Bonekeeper	14	Kettlewright
+5	Cutpurse	15	Marchguard
+6	Fieldwarden	16	Mountebank
+7	Fletchwind	17	Outrider
+8	Foundling	18	Prowler
+9	Fungal Forager	19	Rill Runner
+10	Greenwise	20	Scrivener
+

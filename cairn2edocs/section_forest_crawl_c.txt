@@ -1,0 +1,178 @@
+Cairn role playing game guide:
+
+An Example of creating a forest
+
+Draw Trails
+We start by creating the structure of our forest, drawing the first dot representing the Heart in the central, Southern part of the region.
+We then draw the trunk, creating a gentle curve towards the Northwest.
+Then we draw three branches extending from the trunk, one towards the East (closer to the Heart) and the other towards the West and further North.
+We then draw a single twig off of each branch.
+We draw a dot at every terminal point.
+Finally we connect two dots to other trails in our forest.
+
+Number Dots
+First we assign numbers, starting with the Heart at 11. In total, we have 7 dots for the Details:
+1 is our Heart.
+2 is at the beginning (or end) of the trunk.
+4, 5, and 6, are each at the end of a branch.
+3 and 7 are each at the end of twigs, to the East and West of the trunk respectively.
+
+Assign Trail Markers
+For each trail we’ll roll on the Trail Markers table (d12):
+
+For the trunk we got a 6 (Old Logging Road).
+For the Eastern branch closest to the Heart we got a 3 (Fae Passage).
+For the Western branch closest to the Heart we got a 4 (Bandit’s Run).
+For the Eastern branch farthest from the Heart we got a 5 (Pilgrim’s Footpath).
+For the loopeing trails that we made last, we got a 12 (War Route) and a 7 (Trail Tree).
+
+Assign Trail Spoor
+For each Trail we roll on the Spoor Types table.
+For the Old Logging Road we rolled a 4 (Enormous Footprints).
+For the Fae Passage we rolled a 12 (Fresh Spiderwebs).
+For the Bandit’s Run we rolled a 13 (Archaic Tree Carvings).
+For the Pilgrim’s Footpath we rolled an 18 (Swaying Plants).
+For the War Route we rolled a 14 (Dozens of Stone Piles)
+For the Trail Tree we rolled a 13 (Claw Marks).
+
+Assign Details
+Next we’ll roll on the provided tables to generate features for each Detail. First roll a d20 on the Special table to create the Heart (1). We got an 11 (Elf Queen’s Pavilion).
+
+For each remaining Detail, we first roll on the Detail Types table, then on the associated table:
+
+Detail (2): We roll a d6: a 4 (Hazard). Now we roll a d12 on the Hazards table: a 6 (Thorny Thickets).
+Detail (3): We roll a d6: a 5 (Landmark). Now we roll a d12 on the Landmarks table: an 11 (Cathedral of Trees).
+Detail (4): We roll a d6: 1 (Settlement). Now we roll a d12 on the Settlement table: a 9 (Monastic Retreat). We also roll on the Settlement Features table with a d20: a 20 (Renowned for its scholars).
+Detail (5): We roll a d6: 2 (Ruins). Roll a d12 on the Ruins table: a 4 (Crumbled Crypt).
+Detail (6): We roll a d6: 3 (Lair). Roll a d12 on the Lairs table: an 8 (Goblin Hideaway).
+Detail (7): We roll a d6: 6 (Special). Roll a d20 on the Special table: a 5 (Will-o’-Wisps).
+
+Create Encounters
+Next, we create forest encounters by rolling a d20 on the Forest Encounters table for each Detail.
+
+We roll an 8: Naiads splashing in a small pond. Their teeth are fanged, like daggers.
+We roll a 17: A dense thicket of thorns, nearly impassable.
+We roll a 15: A wounded animal, whining pitifully as it limps.
+Example Forest
+
+Draw Trails
+We start by creating the structure of our forest, drawing the first dot representing the Heart in the central, Southern part of the region.
+We then draw the trunk, creating a gentle curve towards the Northwest.
+Then we draw three branches extending from the trunk, one towards the East (closer to the Heart) and the other towards the West and further North.
+We then draw a single twig off of each branch.
+We draw a dot at every terminal point.
+Finally we connect two dots to other trails in our forest.
+
+Number Dots
+First we assign numbers, starting with the Heart at 11. In total, we have 7 dots for the Details:
+1 is our Heart.
+2 is at the beginning (or end) of the trunk.
+4, 5, and 6, are each at the end of a branch.
+3 and 7 are each at the end of twigs, to the East and West of the trunk respectively.
+
+Assign Trail Markers
+For each trail we’ll roll on the Trail Markers table (d12):
+
+For the trunk we got a 6 (Old Logging Road).
+For the Eastern branch closest to the Heart we got a 3 (Fae Passage).
+For the Western branch closest to the Heart we got a 4 (Bandit’s Run).
+For the Eastern branch farthest from the Heart we got a 5 (Pilgrim’s Footpath).
+For the loopeing trails that we made last, we got a 12 (War Route) and a 7 (Trail Tree).
+
+Assign Trail Spoor
+For each Trail we roll on the Spoor Types table.
+For the Old Logging Road we rolled a 4 (Enormous Footprints).
+For the Fae Passage we rolled a 12 (Fresh Spiderwebs).
+For the Bandit’s Run we rolled a 13 (Archaic Tree Carvings).
+For the Pilgrim’s Footpath we rolled an 18 (Swaying Plants).
+For the War Route we rolled a 14 (Dozens of Stone Piles)
+For the Trail Tree we rolled a 13 (Claw Marks).
+
+Assign Details
+Next we’ll roll on the provided tables to generate features for each Detail. First roll a d20 on the Special table to create the Heart (1). We got an 11 (Elf Queen’s Pavilion).
+
+For each remaining Detail, we first roll on the Detail Types table, then on the associated table:
+
+Detail (2): We roll a d6: a 4 (Hazard). Now we roll a d12 on the Hazards table: a 6 (Thorny Thickets).
+Detail (3): We roll a d6: a 5 (Landmark). Now we roll a d12 on the Landmarks table: an 11 (Cathedral of Trees).
+Detail (4): We roll a d6: 1 (Settlement). Now we roll a d12 on the Settlement table: a 9 (Monastic Retreat). We also roll on the Settlement Features table with a d20: a 20 (Renowned for its scholars).
+Detail (5): We roll a d6: 2 (Ruins). Roll a d12 on the Ruins table: a 4 (Crumbled Crypt).
+Detail (6): We roll a d6: 3 (Lair). Roll a d12 on the Lairs table: an 8 (Goblin Hideaway).
+Detail (7): We roll a d6: 6 (Special). Roll a d20 on the Special table: a 5 (Will-o’-Wisps).
+
+Create Encounters
+Next, we create forest encounters by rolling a d20 on the Forest Encounters table for each Detail.
+
+We roll an 8: Naiads splashing in a small pond. Their teeth are fanged, like daggers.
+We roll a 17: A dense thicket of thorns, nearly impassable.
+We roll a 15: A wounded animal, whining pitifully as it limps.
+Example Forest
+
+Draw Trails
+We start by creating the structure of our forest, drawing the first dot representing the Heart in the central, Southern part of the region.
+We then draw the trunk, creating a gentle curve towards the Northwest.
+Then we draw three branches extending from the trunk, one towards the East (closer to the Heart) and the other towards the West and further North.
+We then draw a single twig off of each branch.
+We draw a dot at every terminal point.
+Finally we connect two dots to other trails in our forest.
+
+Number Dots
+First we assign numbers, starting with the Heart at 11. In total, we have 7 dots for the Details:
+1 is our Heart.
+2 is at the beginning (or end) of the trunk.
+4, 5, and 6, are each at the end of a branch.
+3 and 7 are each at the end of twigs, to the East and West of the trunk respectively.
+
+Assign Trail Markers
+For each trail we’ll roll on the Trail Markers table (d12):
+
+For the trunk we got a 6 (Old Logging Road).
+For the Eastern branch closest to the Heart we got a 3 (Fae Passage).
+For the Western branch closest to the Heart we got a 4 (Bandit’s Run).
+For the Eastern branch farthest from the Heart we got a 5 (Pilgrim’s Footpath).
+For the loopeing trails that we made last, we got a 12 (War Route) and a 7 (Trail Tree).
+
+Assign Trail Spoor
+For each Trail we roll on the Spoor Types table.
+For the Old Logging Road we rolled a 4 (Enormous Footprints).
+For the Fae Passage we rolled a 12 (Fresh Spiderwebs).
+For the Bandit’s Run we rolled a 13 (Archaic Tree Carvings).
+For the Pilgrim’s Footpath we rolled an 18 (Swaying Plants).
+For the War Route we rolled a 14 (Dozens of Stone Piles)
+For the Trail Tree we rolled a 13 (Claw Marks).
+
+Assign Details
+Next we’ll roll on the provided tables to generate features for each Detail. First roll a d20 on the Special table to create the Heart (1). We got an 11 (Elf Queen’s Pavilion).
+
+For each remaining Detail, we first roll on the Detail Types table, then on the associated table:
+
+Detail (2): We roll a d6: a 4 (Hazard). Now we roll a d12 on the Hazards table: a 6 (Thorny Thickets).
+Detail (3): We roll a d6: a 5 (Landmark). Now we roll a d12 on the Landmarks table: an 11 (Cathedral of Trees).
+Detail (4): We roll a d6: 1 (Settlement). Now we roll a d12 on the Settlement table: a 9 (Monastic Retreat). We also roll on the Settlement Features table with a d20: a 20 (Renowned for its scholars).
+Detail (5): We roll a d6: 2 (Ruins). Roll a d12 on the Ruins table: a 4 (Crumbled Crypt).
+Detail (6): We roll a d6: 3 (Lair). Roll a d12 on the Lairs table: an 8 (Goblin Hideaway).
+Detail (7): We roll a d6: 6 (Special). Roll a d20 on the Special table: a 5 (Will-o’-Wisps).
+
+Create Encounters
+Next, we create forest encounters by rolling a d20 on the Forest Encounters table for each Detail.
+
+We roll an 8: Naiads splashing in a small pond. Their teeth are fanged, like daggers.
+We roll a 17: A dense thicket of thorns, nearly impassable.
+We roll a 15: A wounded animal, whining pitifully as it limps.
+We roll a 2: The remnants of an old watchtower hidden in dense forest growth.
+We roll a 7: A gnarled tree trunk bearing an uncannily carved face on its trunk.
+We roll a 3: A snarling pack of wolves surrounding a fresh kill.
+We roll a 6: A circle of perfect mushrooms. Blue-white wings flutter between.
+
+Detail Naming
+We will now name each Detail using the Detail Names table. I took some liberties here, smashing together words I liked with other words from the list.
+
+Heart (Elf Queen’s Pavilion): Glintleaf Dell
+(Thorny Thickets): Thistlefield
+(Cathedral of Trees): Timbertop Spire
+(Monastic Retreat): Cloister of the Quiet Wood
+(Crumbled Crypt): Shattered Barrow
+(Goblin Hideaway): Mossbreak Nook
+(Will-o’-Wisps): Glimmerglade
+Naming Our Forest
+Finally, we roll on the Forest Names table, getting a 4 and then a 6 (or 46) for the adjective, “Luminous”. Then we roll again, getting a 10 and a 5 (or 15) for the noun, “Weald.” Our forest is called The Luminous Weald.
