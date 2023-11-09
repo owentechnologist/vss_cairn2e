@@ -34,21 +34,21 @@ redis_time = redis_conn.time()
 unique_session_key=(f"{redis_time}").replace(" ","")
 print(f"session seed looks like: {unique_session_key_seed}")
 """
-
-our_history = chat_memory.getMemories(3)
+memory_size=20
+our_history = chat_memory.getMemories(memory_size)
 
 def chat(question,our_history):
     flattened_history = ""
     for m in our_history:
         flattened_history = f"{flattened_history}  {m}"
-    flattened_history = f"Use the following as Context for your reply: {flattened_history}"
+    flattened_history = f"  {flattened_history}"
     print(f"{spacer}using {flattened_history} for context...")
-    chat_prompt=f"You are a friendly chat bot. A user is prompting you with: {question} {flattened_history}"
+    chat_prompt=f"You are a friendly chat bot. Using this history of our chat: {flattened_history}    This is the input from the user: {question}  Begin: respond as a chat bot "
     token_logger.addEventToMyTSKey(len(chat_prompt)/4)
     response = openai.completions.create(
       model="text-davinci-002",
       prompt=chat_prompt,
-      max_tokens=200
+      max_tokens=1000
     )
     return response.choices[0].text.strip()
 
@@ -70,12 +70,14 @@ def display_menu():
 
 while True:
     user_q = display_menu();
-    response = chat(user_q,chat_memory.getMemories(5))
-    #chat_memory.addEntryToMyListMemory(f"{user_q}")
+    response = chat(user_q,chat_memory.getMemories(memory_size))
+    chat_memory.addEntryToMyListMemory(f"{user_q}")
+    """
     #alternative including response:
     input_string = f"\"input\": \"{user_q}\"" 
     output_string =f"\"output\": \"{response}\""
     chat_memory.addEntryToMyListMemory(f"{{{input_string}}}, {{{output_string}}}")
+    """
     print(f'\n{response}')
     #print(f'\n{response.get("content")}')
 

@@ -9,6 +9,6 @@ redis_password = "<enter your redis password here>"
 redis_username = "default"
 redis_host = "FIXME.centralus.redisenterprise.cache.azure.net"
 redis_port = "10000"
-redis_password = "FIXME_5l_wFUzhoROOECMPsX7Cy3bk+xhfu0AzAMwSjbcSRQ"
+redis_password = "wFUzhoROOECMPsX7Cy3bk+xhfu0AzAMwSjbcSRQT6SAot="
 #partial only - you should provide a full secret key:
-secret_for_llm="FIXME_9_P1Dod4S265TGaHT3BlbkFJLdAj7ppYmMaIEpKNz0io"
+secret_for_llm="FIXME_92_pdNZUqUjFg8OyoT3BlbkFJZIvRjKO8w3vjvGauecotZa"
