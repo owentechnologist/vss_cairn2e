@@ -71,7 +71,11 @@ def display_menu():
 while True:
     user_q = display_menu();
     response = chat(user_q,chat_memory.getMemories(5))
-    chat_memory.addEntryToMyListMemory(f"{user_q}")
+    #chat_memory.addEntryToMyListMemory(f"{user_q}")
+    #alternative including response:
+    input_string = f"\"input\": \"{user_q}\"" 
+    output_string =f"\"output\": \"{response}\""
+    chat_memory.addEntryToMyListMemory(f"{{{input_string}}}, {{{output_string}}}")
     print(f'\n{response}')
     #print(f'\n{response.get("content")}')
 
