@@ -86,3 +86,17 @@ python3 test_redis_loggers.py
 ```
 python3 chat_with_memory.py
 ```
+
+In summary this project showcases:
+
+A) Loading text files into Redis as Vector Embeddings [ redisloader_redisvl_cairn_txtfiles.py ]
+
+B) Querying Redis as the VectorDB [ redisvl_cairn_vss_query.py ]
+
+C) Using the results of a Vector query to augment the response of OpenAI [ llm_redisvl_cairn_faq.py ]
+
+D) Using the TimeSeries module to track tokens used as well as latency for queries   [ test_redis_loggers.py ]
+
+E) Using the TopK data structure from the Bloom module to keep track of the most frequently utilized prompts [ test_redis_loggers.py ]
+
+F) Using the List data type to keep a history of prompts to be used as extended memory for the LLM  [ chat_with_memory.py ]
