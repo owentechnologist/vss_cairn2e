@@ -7,21 +7,27 @@ import os
 
 # Some suggested VSS queries:
 """
+Where can I get more information on the game Cairn?
+
 What is the effect of a short rest in Cairn?
 
-When should players role saving throws
+When should players role saving throws?
 
-What happens when a player takes critical damage
+What happens when a player takes critical damage?
 
 How can a Warden make the game fun?
 
-How is advancement for players handled
+How is advancement for players handled?
 
-How do players level up their characters
+How do players level up their characters?
 
-List the steps involved when rolling for an encounter
+List the steps involved when rolling for an encounter.
 
-List the steps involved when creating a character
+List the steps involved when creating a character.
+
+How many times can a torch be lit before it doesn't work any more?
+
+How is Cairn different from D&D 5th edition?
 """
 
 # set redis address

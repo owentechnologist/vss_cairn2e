@@ -1,14 +1,17 @@
-# set redis address
-"""
-redis_username = "default"
-redis_host = "<enter your redis host here>"
-redis_port = "<enter your redis port here>"
-redis_password = "<enter your redis password here>"
-"""
+# the file actual_keys_and_such.py is 
+# deliberately not added to the github repo
+# create this file locally and populate it with a copy of 
+# the name value pairs in this file
+# edit the values in actual_keys_and_such.py so that 
+# they represent your real passwords/keys etc
 
+# The following are sample - fake name/value pairs you 
+# should use as a template in your actual_keys_and_such.py file
+'''
 redis_username = "default"
 redis_host = "FIXME.centralus.redisenterprise.cache.azure.net"
 redis_port = "10000"
-redis_password = "wFUzhoROOECMPsX7Cy3bk+xhfu0AzAMwSjbcSRQT6SAot="
-#partial only - you should provide a full secret key:
+redis_password = "FIXME_wFUzhoROOECMPsX7Cy3bk+xhfu0AzAMwSjbcSRQT6SAot="
 secret_for_llm="FIXME_92_pdNZUqUjFg8OyoT3BlbkFJZIvRjKO8w3vjvGauecotZa"
+'''
+from actual_keys_and_such import *

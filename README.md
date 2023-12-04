@@ -1,7 +1,7 @@
 # vss_cairn2e
-Using Redis as a Vector Similarity Search database to provide an FAQ solution for cairn2e 
+Using Redis as a Vector Similarity Search database to provide an FAQ solution for cairn2e (the publish date of this version of the game is 2023 which means no models are trained on it in 2023/24)
 
-useful links to python docs for redis and search:
+Useful links to python docs for redis and search:
 https://redis-py.readthedocs.io/en/stable/index.html
 https://redis.readthedocs.io/en/stable/redismodules.html 
 
@@ -57,7 +57,8 @@ pip3 install -r requirements.txt
 deactivate
 ```
 
-* Note that the file: keys_and_such.py contains connectivity information for Redis - the other scripts import these values - so you only have to edit in one place.
+* Note that the file: keys_and_such.py imports connectivity information for Redis from the file: actual_keys_and_such.py - the other scripts import these values - so you only have to edit in one place.  
+* To safeguard your passwords and such, there is a need for you to generate a local file that is not part of the repo.  This file is called actual_keys_and_such.py and will contain the login credentials and API key information you need to execute the programs in this project. Please read the contents of keys_and_such.py to guide you further.
 
 ### to run the cairn data loader program the first time execute:
 

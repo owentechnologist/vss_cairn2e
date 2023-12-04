@@ -1,3 +1,7 @@
+# the actual_keys_and_such.py file 
+# (this one contains your real private keys etc)
+actual_keys_and_such.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

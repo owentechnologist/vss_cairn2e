@@ -5,8 +5,32 @@ from list_as_memory import *
 from timeseries_event_logger import *
 from keys_and_such import *
 
+# Some suggested LLM queries:
+"""
+Where can I get more information on the game Cairn?
+
+What is the effect of a short rest in Cairn?
+
+When should players role saving throws?
+
+What happens when a player takes critical damage?
+
+How can a Warden make the game fun?
+
+How is advancement for players handled?
+
+How do players level up their characters?
+
+List the steps involved when rolling for an encounter
+
+List the steps involved when creating a character
+
+How many times can a torch be lit before it doesn't work any more?
+
+How is Cairn different from D&D 5th edition?
+"""
 # for use with OPENAI LLM: 
-openai.api_key = os.environ.get("apikey")
+openai.api_key = secret_for_llm
 
 username = redis_username
 host = redis_host
@@ -42,8 +66,9 @@ def chat(question,our_history):
     for m in our_history:
         flattened_history = f"{flattened_history}  {m}"
     flattened_history = f"  {flattened_history}"
-    print(f"{spacer}using {flattened_history} for context...")
-    chat_prompt=f"You are a friendly chat bot. Using this history of our chat: {flattened_history}    This is the input from the user: {question}  Begin: respond as a chat bot "
+    print(f"{spacer}using {flattened_history} for context...{spacer}")
+    chat_prompt=f"Remember this question: {question}\nThe following is history of this specific user's statements:  {flattened_history} ...  Begin: respond as a chat bot to: {question}"
+    #chat_prompt=f"You are a friendly chat bot. Using this history of our chat: {flattened_history}    This is the input from the user: {question}  Begin: respond as a chat bot "
     token_logger.addEventToMyTSKey(len(chat_prompt)/4)
     response = openai.completions.create(
       model="text-davinci-002",

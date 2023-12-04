@@ -6,8 +6,8 @@ from keys_and_such import *
 import os
 
 # for use with OPENAI LLM: 
-openai.api_key = os.environ.get("apikey")
-print(f'mykey is: {os.environ.get("apikey")}')
+openai.api_key = secret_for_llm #os.environ.get("apikey")
+print(f'mykey is: {openai.api_key}')
 
 os.environ["TOKENIZERS_PARALLELISM"] = "False"
 
@@ -15,27 +15,33 @@ def ask_openai(question):
     response = openai.completions.create(
       model="text-davinci-002",
       prompt=question,
-      max_tokens=200
+      max_tokens=600
     )
     return response.choices[0].text.strip()
 
 # Some suggested LLM queries:
 """
+Where can I get more information on the game Cairn?
+
 What is the effect of a short rest in Cairn?
 
-When should players role saving throws
+When should players role saving throws?
 
-What happens when a player takes critical damage
+What happens when a player takes critical damage?
 
 How can a Warden make the game fun?
 
-How is advancement for players handled
+How is advancement for players handled?
 
-How do players level up their characters
+How do players level up their characters?
 
 List the steps involved when rolling for an encounter
 
 List the steps involved when creating a character
+
+How many times can a torch be lit before it doesn't work any more?
+
+How is Cairn different from D&D 5th edition?
 """
 
 # if you export your redis URL to the system you can execute:
@@ -92,8 +98,9 @@ while True:
     print(f'\n Redis VSS ... Searching for: {user_q}...\nresult:')
     for next_result in results:
         ctx = next_result.get("content")
-        prompt =f'Provide a 32 word answer to this question {user_q}   Be sure to use the following information: {ctx}'
+        print(f'\nVectorSearch returns this: \n{ctx}')
+        prompt =f'Remember this question: {user_q}\nThe following is information you will use:  {ctx} ... now step me through the answer to {user_q}'
         llm_response = ask_openai(prompt)
-        print(f'\n{llm_response}')
+        print(f'\n\n{spacer}\nLLM RESPONSE:\n{llm_response}')
 
 
