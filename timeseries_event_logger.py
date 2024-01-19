@@ -11,7 +11,7 @@ class TimeSeriesEventLogger:
     
     def create_ts_key(self):
         try:
-            self.ts.create(self.time_series_key_name, labels={"custom_label": self.custom_label, "shared_label": self.shared_label })
+            self.ts.create(self.time_series_key_name, labels={"customLabel": self.custom_label, "sharedLabel": self.shared_label })
         except Exception as exc:
             print('The TimeSeries key may already exist  ... continuing on...')            
 

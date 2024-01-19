@@ -13,7 +13,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "False"
 
 def ask_openai(question):
     response = openai.completions.create(
-      model="text-davinci-002",
+      model="gpt-3.5-turbo-instruct", #"text-davinci-002",
       prompt=question,
       max_tokens=600
     )

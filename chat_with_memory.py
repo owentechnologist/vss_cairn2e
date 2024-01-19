@@ -3,6 +3,7 @@ from sentence_transformers import SentenceTransformer
 import os
 from list_as_memory import *
 from timeseries_event_logger import *
+from topk_entry_logger import *
 from keys_and_such import *
 
 # Some suggested LLM queries:
@@ -46,10 +47,17 @@ unique_session_key=input().replace(" ","")
 
 #setup List key in Redis to capture chat history:
 chat_memory = ListAsMemory(unique_session_key,redis_conn)
-token_logger = TimeSeriesEventLogger( custom_label="token_used_count", time_series_key_name="ts:chat_with_memory",redis=redis_conn)
+token_logger = TimeSeriesEventLogger( custom_label="countingTokensUsed", time_series_key_name="ts:chat_with_memory",redis=redis_conn)
 token_logger.create_ts_key()
 ## doing this using redisInsight is informative:
 # TS.MRANGE - + AGGREGATION avg 60000 FILTER custom_label=token_used_count
+
+## establish a test topK object to hold repeated prompts across users
+topk_logger = TopkEntryLogger("topk:test",10,redis_conn)
+topk_logger.create_topk_key()
+
+## doing this using redisInsight or redis-cli is informative:
+#TOPK.LIST topk:test withcount
 
 """
 # alternate method of building unique key:
@@ -71,7 +79,7 @@ def chat(question,our_history):
     #chat_prompt=f"You are a friendly chat bot. Using this history of our chat: {flattened_history}    This is the input from the user: {question}  Begin: respond as a chat bot "
     token_logger.addEventToMyTSKey(len(chat_prompt)/4)
     response = openai.completions.create(
-      model="text-davinci-002",
+      model="gpt-3.5-turbo-instruct",
       prompt=chat_prompt,
       max_tokens=1000
     )
@@ -96,7 +104,9 @@ def display_menu():
 while True:
     user_q = display_menu();
     response = chat(user_q,chat_memory.getMemories(memory_size))
-    chat_memory.addEntryToMyListMemory(f"{user_q}")
+    chat_memory.addEntryToMyListMemory(f"user prompt: [ {user_q} ]   chatbot reply: [ {response} ]")
+    topk_logger.addEntryToMyTopKKey(f"Subject {user_q}")
+
     """
     #alternative including response:
     input_string = f"\"input\": \"{user_q}\"" 
